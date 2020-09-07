@@ -34,7 +34,7 @@ EOF
                     "clients": [
                         {
                             "id": "${UUID}",
-                            "alterId": 4
+                            "alterId": 0
                         }
                     ]
                 },
@@ -61,7 +61,7 @@ clone_repo(){
     echo "进行初始化。。。"
     rm -rf IBMVPS
     rm -rf IBMyes
-    git clone https://github.com/bigfangfang/IBMVPS
+    git clone https://github.com/cnxzp/IBMVPS
     cd IBMVPS
     git submodule update --init --recursive
     cd v2ray-cloudfoundry/v2ray
@@ -106,10 +106,10 @@ install(){
     {
       "v": "2",
       "ps": "ibmvps",
-      "add": "bigfang.us-south.cf.appdomain.cloud",
+      "add": "ibmxzp.us-south.cf.appdomain.cloud",
       "port": "443",
       "id": "${UUID}",
-      "aid": "4",
+      "aid": "0",
       "net": "ws",
       "type": "none",
       "host": "",
